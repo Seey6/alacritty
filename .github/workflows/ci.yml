@@ -27,6 +27,12 @@ jobs:
         run: |
           rustup component add clippy
           cargo clippy --all-targets
+      - name: Upload to Artifacts 
+        uses: actions/upload-artifact@v4 
+        with: 
+          name: Artifacts 
+          path: ./target/release/osx/Alacritty.dmg
+          
   check-macos-x86_64:
     runs-on: macos-latest
     steps:
