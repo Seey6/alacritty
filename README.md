@@ -10,6 +10,7 @@
 </p>
 
 ## About
+disable dsb
 
 Alacritty is a modern terminal emulator that comes with sensible defaults, but
 allows for extensive [configuration](#configuration). By integrating with other
