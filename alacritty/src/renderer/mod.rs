@@ -148,7 +148,7 @@ impl Renderer {
 
         // Use the config option to enforce a particular renderer configuration.
         let (use_glsl3, allow_dsb) = match renderer_preference {
-            Some(RendererPreference::Glsl3) => (true, false),
+            Some(RendererPreference::Glsl3) => (false, false),
             Some(RendererPreference::Gles2) => (false, false),
             Some(RendererPreference::Gles2Pure) => (false, false),
             None => (shader_version.as_ref() >= "3.3" && !is_gles_context, false),
